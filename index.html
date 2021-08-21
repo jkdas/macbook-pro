@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac book pro purchase</title>
+    <!-- Tailwind CSS style -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container mx-auto px-4 md:px-2">
+            <div class="grid grid-cols-2">
+                <!-- Mac book Image -->
+                <div class="p-5 border rounded border-gray-200 m-5">
+                    <div>
+                        <img src="images/mac.png" class="w-full rounded" alt="Mac book pro" />
+                    </div>
+                </div>
+                <!-- Mac book pro description -->
+                <div class="mt-10 max-w-lg mx-auto">
+                    <h1 class="text-5xl mb-10">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <div class="text-lg text-gray-700">Apple M1 chip with 8 core CPU with 4 performance cores
+                        and 4 efficiencey cores, 7-core GPU, 16-core Neural Engine 8GB unified memory 256GB SSD storage
+                        Two Thunderbolt/USB 4 ports Magic Mouse Magic keyboard US English
+                    </div>
+                    <!-- Mac book pro purchase options button -->
+                    <div class="pt-10">
+                        <!-- Mac book pro purchase Memory selection -->
+                        <h4 class="font-bold mb-2">Memory</h4>
+                        <button id="memory-8gb-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            8GB unified memory
+                        </button>
+                        <button id="memory-16gb-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            16GB unified memory
+                        </button>
+                    </div>
+                    <!-- Mac book pro Storage selection -->
+                    <div class="pt-10">
+                        <h4 class="font-bold mb-2">Storage</h4>
+                        <button id="storage-256gb-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            256GB SSD Storage
+                        </button>
+                        <button id="storage-512gb-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            512GB SSD Storage
+                        </button>
+                        <button id="storage-1tb-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            1TB SSD Storage
+                        </button>
+                    </div>
+                    <!-- Mac book pro purchase Delivery option selection -->
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-2">Choose Your Delivery Options</h4>
+                        <button id="free-delivery-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            Friday,Aug 25 FREE Prime Delivery
+                        </button>
+                        <button id="express-delivery-btn"
+                            class="p-3 border-2 border-gray-400 shadow hover:bg-gray-400 rounded">
+                            Friday,Aug 21 Delivery Charge $20
+                        </button>
+                    </div>
+                    <!-- Mac book pro price calculation table -->
+                    <!-- <div class="text-left font-bold text-xl">
+                        <table class="mt-10">
+                            <tbody>
+                                <tr>
+                                    <td>Best Price</th>
+                                    <td class="pl-16">$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Memory Cost</td>
+                                    <td class="pl-16">$<span id="extra-memory">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Storage Cost</th>
+                                    <td class="pl-16">$<span id="extra-storage">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Charge</th>
+                                    <td class="pl-16">$<span id="delivery-charge">0</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="border-t-2 border-gray-400 mt-2"></div>
+                        <table>
+                            <tr>
+                                <td>Total Price</th>
+                                <td class="pl-36">$<span id="total">1299</span></td>
+                            </tr>
+                        </table>
+                    </div> -->
+                    <div class="grid grid-cols-2 mt-10 text-left font-semibold text-lg">
+                        <h5 class="mb-3">Best Price</h5>
+                        <h5>$<span id="best-price">1299</span></h5>
+                        <h5 class="mb-3">Extra Memory Cost</h5>
+                        <h5>$<span id="extra-memory-charge">0</span></h5>
+                        <h5 class="mb-3">Extra Storage Cost</h5>
+                        <h5>$<span id="extra-storage-charge">0</h5>
+                        <h5 class="mb-3">Delivery Charge</h5>
+                        <h5>$<span id="delivery-charge">0</h5>
+                        <div class="border-t-2 border-gray-400 mt-2"></div><br>
+                        <h5>Total Price</h5>
+                        <h5>$<span id="total-price">1299</span></h5>
+                    </div>
+
+                    <div class="mt-5">
+                        <h5 class="font-bold">Add Promo Code</h5>
+                        <input id="promo-code" class="border-2 border-gray-500 rounded text-xl p-2" type="text">
+                        <button onclick='applyPromoCode()'
+                            class="py-2 px-3 bg-pink-500 border-2 shadow rounded text-white text-xl font-bold">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mac book pro discount total display here -->
+            <section>
+                <div class="text-4xl text-center my-10 font-bold">Total: <span id="discount-total">1299</span>$</div>
+            </section>
+        </div>
+    </main>
+    <!-- Custom js code -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
